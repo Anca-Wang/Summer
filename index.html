@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/5399b52f7d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-and-info">
+      <img src="https://images.pexels.com/photos/775200/pexels-photo-775200.jpeg" alt="black Forest">
+      <div class="info-container">
+        <div class="info-header">
+          <div class="title">
+            <h1>Summer</h1>
+            <i class="fa-regular fa-circle-question comment-button">
+              <p class="comment-text">· Major Key is the main main melody, it's the foundation of the theme.<br><br>·
+                Sound Effect is the accompany, you can use it the way you enjoy.</p>
+            </i>
+          </div>
+        </div>
+        <div class="info-section major-key">
+          <h3>Major Key</h3>
+          <div class="button-container">
+            <button id="playButton1">Black Forest</button>
+            <!-- <audio id="audioPlayer" src="dawn.MP3"></audio> -->
+          </div>
+        </div>
+        <div class="info-section sound-effect">
+          <h3>Sound Effect</h3>
+          <div class="button-container">
+            <button id="playButton2">Birds Flapping</button>
+            <button id="playButton3">Water Swooshing</button>
+            <button id="playButton4">Water Stream</button>
+            <!-- <audio id="audioPlayer" src="sunfrost.MP3"></audio> -->
+            <button id="playButton5">Waterdrop</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#link1">Spring</a></li>
+          <li><a href="#link2">SUMMER</a></li>
+          <li><a href="#link3">fall</a></li>
+          <li><a href="#link3">winter</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">Made BY Anca © 2023</p>
+      <p class="date">11/10/2023</span></p>
+    </footer>
+
+  </div>
+
+</body>
+
+<script>
+
+  // examplify an audio from url
+
+  var audio1 = new Audio('https://cdn2.ear0.com:3321/preview?soundid=35266&type=mp3');
+  var audio2 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/968712/Birds_Fly_Away_mp3.mp3?Expires=2003744820594&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=1imFMTGAkIYLLz08nawDFwPziAnMSthWNafLkiAVNKRSmtOFd46J-45~gG2f8N~uIs2a5iL0sYqkrGKcKHLlCKECNxXlqS5qU0Kvbb4aLNiQq3fxLoy1ytFzmPmacn8W9ICYmgEMr8jxQqbxFFIT5onId9uVFR1VYxoorRnqbYGcr35NDPS4a5hQ-kWNTheos5oeoK991uQ1fwPYZw3RDoPrCCPht7MgzHczF-XfnV142ZZUn~2cr8jDq4A90v6HmFrepuaDsZ8xZiX7TFcU7BmYHvFV0m70rNkOvWPZQkw7L~qGc-bgIJYKPBYidHM-eaKJd3jzrvCwPuPXW6Zihg__');
+  var audio3 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/1677490/Water_Swooshes_mp3.mp3?Expires=2003734610110&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=mC1Dsqne9BOuY9HhehZ7~ER5z3IUbrL6g9Y-tojm4gQAE2S7a3MJCjuBiGys4t25LJLakyZoxh8XRthef4Q7H2zfisVp4NkQp-PJLoCvh6HwUh5s82xtsNq5GqJSK0Mu2fPj7w9O9ebE6QPmJWkz3f5~1cG3pPO9Alem~b0fciubRQwvzSEBso3pC852wkLrrJ7uYuClhIo1gWYDElHpEbSPp-DzueNi1xJrgvrqtwfW2yKZxaGPFpFp60fQ9MqFixpqS7c966rHaka6QkJbGLKTcbq7Iv4cIxZLUhFEvZmbxZVrRhn-4A4~FJEHwdEy8NMHNl9pHLaFZWVZnFG1pw__');
+  var audio5 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/1023006/Water_Drop_mp3.mp3?Expires=2003733609423&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=ZxPDjqXG0q6wOfufYyqk6eLq7z1cNdMcgQDlIlQt1Ftz~6FgYRd3ZGEDUT4Fbivk6SjMcUCTPTEguB63PHMipLeRMbuQVV5HkSs32ZuTeflpBOL9uor~V2Kv5Nttp63T~xgSuYpSLLEKZW7p2cW-Gy6B-Mk3okWjKBnrl5dJs9LOfwrLtUg9zYf1LdiUrzbRBrh66Nm24Q-lqw9dfBjpuLE1zLyDUEBDzT-FMoGAdUigRqRk7uu4AbvSn1k08pUxDiy4r4DZLQgMerl8VoAwLDzcyUKmGkAxmSjrrPrz6oABMPsKoV88LDyRnOrzGErRQy3dNkNVrjZoiCq6itcajA__');
+
+  //Add eventlistener for each button
+
+  document.getElementById('playButton1').addEventListener('click', function () { audio1.play(); });
+  document.getElementById('playButton2').addEventListener('click', function () { audio2.play(); });
+  document.getElementById('playButton3').addEventListener('click', function () { audio3.play(); });
+  document.getElementById('playButton4').addEventListener('click', function () { audio4.play(); });
+  document.getElementById('playButton5').addEventListener('click', function () { audio5.play(); });
+
+  // audio2.volume = 1.2;
+
+  document.getElementById('playButton1').addEventListener('click', function () {
+    var audioPlayer = document.getElementById('audioPlayer');
+    if (audioPlayer.paused) {
+      audioPlayer.play();
+    } else {
+      audioPlayer.pause();
+    }
+  });
+
+</script>
+
+</html>

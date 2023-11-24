@@ -33,11 +33,11 @@
         <div class="info-section sound-effect">
           <h3>Sound Effect</h3>
           <div class="button-container">
-            <button id="playButton2">Birds Flapping</button>
-            <button id="playButton3">Water Swooshing</button>
-            <button id="playButton4">Water Stream</button>
+            <button id="playButton2">Rain</button>
+            <button id="playButton3">Crickets Chirping</button>
+            <button id="playButton4">Thunder</button>
             <!-- <audio id="audioPlayer" src="sunfrost.MP3"></audio> -->
-            <button id="playButton5">Waterdrop</button>
+            <button id="playButton5">Storm</button>
           </div>
         </div>
       </div>
@@ -70,9 +70,11 @@
   // examplify an audio from url
 
   var audio1 = new Audio('https://cdn2.ear0.com:3321/preview?soundid=35266&type=mp3');
-  var audio2 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/968712/Birds_Fly_Away_mp3.mp3?Expires=2003744820594&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=1imFMTGAkIYLLz08nawDFwPziAnMSthWNafLkiAVNKRSmtOFd46J-45~gG2f8N~uIs2a5iL0sYqkrGKcKHLlCKECNxXlqS5qU0Kvbb4aLNiQq3fxLoy1ytFzmPmacn8W9ICYmgEMr8jxQqbxFFIT5onId9uVFR1VYxoorRnqbYGcr35NDPS4a5hQ-kWNTheos5oeoK991uQ1fwPYZw3RDoPrCCPht7MgzHczF-XfnV142ZZUn~2cr8jDq4A90v6HmFrepuaDsZ8xZiX7TFcU7BmYHvFV0m70rNkOvWPZQkw7L~qGc-bgIJYKPBYidHM-eaKJd3jzrvCwPuPXW6Zihg__');
-  var audio3 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/1677490/Water_Swooshes_mp3.mp3?Expires=2003734610110&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=mC1Dsqne9BOuY9HhehZ7~ER5z3IUbrL6g9Y-tojm4gQAE2S7a3MJCjuBiGys4t25LJLakyZoxh8XRthef4Q7H2zfisVp4NkQp-PJLoCvh6HwUh5s82xtsNq5GqJSK0Mu2fPj7w9O9ebE6QPmJWkz3f5~1cG3pPO9Alem~b0fciubRQwvzSEBso3pC852wkLrrJ7uYuClhIo1gWYDElHpEbSPp-DzueNi1xJrgvrqtwfW2yKZxaGPFpFp60fQ9MqFixpqS7c966rHaka6QkJbGLKTcbq7Iv4cIxZLUhFEvZmbxZVrRhn-4A4~FJEHwdEy8NMHNl9pHLaFZWVZnFG1pw__');
-  var audio5 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/1023006/Water_Drop_mp3.mp3?Expires=2003733609423&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=ZxPDjqXG0q6wOfufYyqk6eLq7z1cNdMcgQDlIlQt1Ftz~6FgYRd3ZGEDUT4Fbivk6SjMcUCTPTEguB63PHMipLeRMbuQVV5HkSs32ZuTeflpBOL9uor~V2Kv5Nttp63T~xgSuYpSLLEKZW7p2cW-Gy6B-Mk3okWjKBnrl5dJs9LOfwrLtUg9zYf1LdiUrzbRBrh66Nm24Q-lqw9dfBjpuLE1zLyDUEBDzT-FMoGAdUigRqRk7uu4AbvSn1k08pUxDiy4r4DZLQgMerl8VoAwLDzcyUKmGkAxmSjrrPrz6oABMPsKoV88LDyRnOrzGErRQy3dNkNVrjZoiCq6itcajA__');
+  var audio2 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/114838/Rain_With_Lightning_-_Thunder_Storm_mp3.mp3?Expires=2003733761229&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=YG8HVcM4ajkHxBE5DigDUeVa31PMQkXRwzhD9abm~ni1Lkar6-31d4~G32tTDqQyEjH4mW5fezuS0kP2GW4oK~YsE37W1OSpwEePkmqNz37ShBHiQh1qdnDy3Jm2ulpSk5lZGEJOzgKuV1JClvTf2sWANlhIkv91BIv73it5WfPrKMrWjliMcZpvhRbWCodqGENFEWd~kiuPW~JMC2DWnzZYQV~0tgN4LbQpUwrCnErRF4di2jTMU1PDuwPtOzdSX~3AMEx592Zs19GFES37VSHG1E-NBGvPRwk-dGHbpYaGW0yXYHuNOhyPxr3iAQy8zoqF6GDhkPy9g74yWZCaDw__');
+  var audio3 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/357144/Crickets_Chirping_FX_Pack_mp3.mp3?Expires=2003747236421&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=nlJmfdKtT26PoRXTeHfOAl2Ns4UjHWIvnxIdUPJvSmjLzw~fK9XFKWd1COtuWK3h0JhYKl0JaW7~jBHwZFQnuzqwjnqLRzCvLYA-unHOoVAS5NFh859nI-nCrASa4c023W9SCAZhPOA2~QQ3vO5G~~RFu6W9flK13Q5K8TGc4aoGLfz3T-~CIkzwKmGZJWWpviHTg1Rg6e~VonBZy5xSe-d1ovGjfpq5lUcQHB912N38Ybh7k3h-22EawtPqB6iVEyAXNNBBchCRMswUSpL-C-M7IKEf78AaEoJiVwNKYHxeDC8Rlx1o~FOq5N7MZk9ViKaepPuCHadt8mSGA1MSsg__');
+  var audio4 = new Audio('https://audiocdn.epidemicsound.com/ES_ITUNES/Thunder%20Clap%201/ES_Thunder%20Clap%201.mp3');
+  var audio5 = new Audio('https://cms-artifacts.motionarray.com/content/motion-array/910795/Thunder_mp3.mp3?Expires=2003733770399&Key-Pair-Id=K2ZDLYDZI2R1DF&Signature=sSw49EoJhZUhrcCBbtWHYJJVyZtPvDy4WqNjm8kee5LqbmsXid7T60NxoMjWErzcfawlwhSP4D~QjglHPFs8llmbd89XODjWxAsPPrh9KFocGi~RkODhrG81fMOyg59-ISF24czq~QxAQw4AbCfgRrVwjtOgUiFlxCgffKInCPUnqBJ3NY7KpBq24cFUF76R7imq5VefN1i79ZOSUJkFhzYRIXEe~gjjWGCu2s4ViqEB2UjVa8wvTHCWNIwFtCRJlp5oKAVAKuvW~T55-~177evJvQ3Qxy89ID~8N~yly~M-eYT77ua6qCMN3zvPPEurO565161tehP3IJPbngkE1w__');
+
 
   //Add eventlistener for each button
 
